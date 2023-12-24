@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,27 +8,44 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
 </head>
+
 <body>
+
     <div class="h-screen w-full bg-zinc-900 ">
+
         <nav class="h-28 w-full px-20  flex items-center justify-between">
             <h2 class="capitalize font-bold text-4xl text-zinc-200">annotation.</h2>
-            <button class="px-5 py-3 bg-lime-500 text-zinc-200 rounded-lg font-bold flex items-center justify-center uppercase text-lg ">make new annotation</button>
+            <button
+                class="makebtn px-5 py-3 bg-lime-500 text-zinc-200 rounded-lg font-bold flex items-center justify-center uppercase text-lg ">make
+                new annotation</button>
         </nav>
-        <div class="h-40 w-40 absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] border-2 border-zinc-700 border-dashed flex justify-center items-center">
-            <span class="text-zinc-600 font-semibold">No files here</span>
+        <div
+            class="h-40 w-40 absolute top-1/2 left-1/2 -translate-x-[50%] -translate-y-[50%] border-2 border-zinc-700 border-dashed flex justify-center items-center">
+            <span class="text-zinc-600 font-semibold">No files here</span>    
         </div>
-        <div id="overlay" class="h-screen w-full bg-zinc-600/60 absolute top-0 opacity-.5" >
-        <div class="h-[70%] w-[50%] px-5 py-5 absolute top-1/2 left-1/2 bg-zinc-700 -translate-x-[50%] -translate-y-[50%] outline-none rounded-2xl">
-           <div class="flex justify-between items-center">
-            <h1 class="text-xl font-bold text-zinc-400">New  annotation</h1>
-            <i id="close" class="ri-close-circle-fill text-xl text-zinc-400"></i></div>
-            <div class="items-start gap-5 flex flex-col gap-5  mt-5">
-            <input class="outline-none py-2 w-full bg-zinc-600 text-xl  text-zinc-400 px-5 rounded-lg" type="text" placeholder="Heading">
-            <textarea class="outline-none w-full bg-zinc-600 rounded-lg resize-none text-xl px-5 py-5 text-zinc-400 h-72 " placeholder="Text-area "></textarea>
-            <button class="bg-lime-500 py-2 text-zinc-200 px-5 rounded-md">SAVE</button></div> 
+        <div class="cards h- w-full ">
+            <!-- <div class="card h-36 w-20 bg-lime-500"></div> -->
         </div>
-    </div>
+        <div id="overlay" class="hidden h-screen w-full bg-zinc-600/60 absolute top-0 opacity-.5">
+            <div
+                class="h-[70%] w-[50%] px-5 py-5 absolute top-1/2 left-1/2 bg-zinc-700 -translate-x-[50%] -translate-y-[50%] outline-none rounded-2xl">
+                <div class="flex justify-between items-center">
+                    <h1 class="text-xl font-bold text-zinc-400">New annotation</h1>
+                    <i id="close" class="ri-close-circle-fill text-xl text-zinc-400"></i>
+                </div>
+                <div class="items-start gap-5 flex flex-col gap-5  mt-5">
+                    <input class="title outline-none py-2 w-full bg-zinc-600 text-xl  text-zinc-400 px-5 rounded-lg"
+                        type="text" placeholder="Heading">
+                    <textarea
+                        class="text outline-none w-full bg-zinc-600 rounded-lg resize-none text-xl px-5 py-5 text-zinc-400 h-72 "
+                        placeholder="Text-area "></textarea>
+                    <button class="savebtn bg-lime-500 py-2 text-zinc-200 px-5 rounded-md">SAVE</button>
+                </div>
+            </div>
+
+        </div>
     </div>
     <script src="script.js"></script>
 </body>
+
 </html>
