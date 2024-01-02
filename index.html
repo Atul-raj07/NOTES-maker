@@ -5,10 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Notes Maker</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@3.7.0/fonts/remixicon.css" rel="stylesheet">
 </head>
-
 <body>
 
     <div class="h-screen w-full bg-zinc-900 flex flex-col ">
@@ -28,7 +26,7 @@
         </div>
         <div id="overlay" class="hidden h-screen w-full bg-zinc-600/60 absolute top-0 opacity-.5">
             <div
-                class="h-[70%] w-[50%] px-5 py-5 absolute top-1/2 left-1/2 bg-zinc-700 -translate-x-[50%] -translate-y-[50%] outline-none rounded-2xl">
+            class="h-[70%] w-[50%] px-5 py-5 absolute top-1/2 left-1/2 bg-zinc-700 -translate-x-[50%] -translate-y-[50%] outline-none rounded-2xl">
                 <div class="flex justify-between items-center">
                     <h1 class="text-xl font-bold text-zinc-400">New annotation</h1>
                     <i id="close" class="ri-close-circle-fill text-xl text-zinc-400"></i>
@@ -42,9 +40,10 @@
                     <button class="savebtn bg-lime-500 py-2 text-zinc-200 px-5 rounded-md">SAVE</button>
                 </div>
             </div>
-
+            
         </div>
     </div>
+    <script src="https://cdn.tailwindcss.com"></script>
     <script src="script.js"></script>
 </body>
 
